@@ -23,7 +23,6 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://github.com/GabrielaDana/counter",
   "browserslist": {
     "production": [
       ">0.2%",
