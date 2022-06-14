@@ -1,0 +1,20 @@
+.container{
+    padding: 0 0 0 0;
+}
+
+.lista{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 0px;
+}
+
+.delete {
+    width: 10vh;
+    margin: 5%;
+}
+
+.name{
+    width: 50%;
+    margin: 0 0 0 5%;
+}
