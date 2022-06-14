@@ -7,8 +7,7 @@ export const Home = () => {
   const [listCounter, setListCounter] = useState(0)
   const [counters, setCounters] = useState([])
   const [name, setName] = useState('')
-  const [num,setNum] = useState(0)
-  const [filter, setFilter] = useState('')
+  const [filter, setFilter] = useState('a-z')
   const date = new Date()
 
   const fun = (e) =>{
@@ -17,7 +16,7 @@ export const Home = () => {
 
   const addCount = () => {
     listCounter < 20 && setListCounter(listCounter + 1);
-    setCounters([...counters, {index: listCounter, id: date, num: num, component: (<Counter key={listCounter} setName={setName} name={name} setNum={setNum}/>)}])
+    setCounters([...counters, {index: listCounter, id: date, component: (<Counter key={listCounter} setName={setName}/>)}])
   }
 
   useEffect(() => {
@@ -31,7 +30,7 @@ export const Home = () => {
       } 
     });
 
-    counters.filter(counter => counter !== !counter.name)
+    // counters.filter(counter => counter !== !counter.name)
 
     setCounters(counters.filter(counter =>{
       return (counter.name !== '')

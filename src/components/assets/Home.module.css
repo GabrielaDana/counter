@@ -1,7 +1,7 @@
 :root{
     --greenBg: rgb(109, 194, 166);
     --greenSoft: rgb(222, 241, 234);
-    --blueDark: rgb(42, 78, 198);
+    --blueDark: rgb(51, 56, 153);
     --blueLight: rgb(131, 174, 235);
 }
 body{
@@ -74,6 +74,7 @@ body{
     border: var(--blueLight);
     border-radius: 5px;
     margin: 0 2% 0 0;
+    text-align: center;
 }
 
 .agregar{

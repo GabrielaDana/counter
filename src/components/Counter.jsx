@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react'
 import style from './assets/Counter.module.css'
 
-export const Counter = ({ setName, name, setNum }) => {
+export const Counter = ({ setName }) => {
 
     useEffect(() => {
         setName(prompt('Ingresa un nombre para el contador'))
@@ -17,13 +17,8 @@ export const Counter = ({ setName, name, setNum }) => {
         count !== 0 && setCount(count-1);
     }
 
-    useEffect(() => {
-        setNum(count)
-    }, [count])
-
     const counter = (
         <div className={style.container}>
-            {/* <p>{name}</p> */}
             <button className={style.menos} onClick={()=> subtract()}>-</button>
             <p className={style.number}>{count}</p>
             <button className={style.mas} onClick={()=> add()}>+</button>
