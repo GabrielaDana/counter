@@ -1,5 +1,21 @@
 
-.title{
-    color: blueviolet;
-    margin-left: 50px;
+.menos,
+.mas{
+    width: 5vh;
+    height: 4vh;
+    border: transparent;
+    border-radius: 50%;
+    color: black;
+    background-color: rgb(229, 226, 226);
+    padding: 0 0 0 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.number{
+    width: 50%; 
+    text-align: center;
 }
