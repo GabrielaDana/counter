@@ -1,3 +1,9 @@
+:root{
+    --greenBg: rgb(109, 194, 166);
+    --greenSoft: rgb(222, 241, 234);
+    --darkGreen:  rgb(20, 81, 59);
+    --lightRed: rgb(218, 54, 79);
+}
 
 .menos,
 .mas{
@@ -5,9 +11,16 @@
     height: 4vh;
     border: transparent;
     border-radius: 50%;
-    color: black;
-    background-color: rgb(229, 226, 226);
     padding: 0 0 0 0;
+    background-color: var(--greenSoft);
+}
+
+.menos{
+    color: var(--lightRed);
+}
+
+.mas{
+    color: var(--darkGreen);
 }
 
 .container{
@@ -18,4 +31,5 @@
 .number{
     width: 50%; 
     text-align: center;
+    color: var(--greenSoft);
 }

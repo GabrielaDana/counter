@@ -1,20 +1,96 @@
-.container{
-    padding: 0 0 0 0;
+:root{
+    --greenBg: rgb(109, 194, 166);
+    --greenSoft: rgb(222, 241, 234);
+    --blueDark: rgb(42, 78, 198);
+    --blueLight: rgb(131, 174, 235);
+}
+body{
+    background-color: rgb(41, 40, 40);
+    margin: 0 0 0 0;
 }
 
+.container{
+    margin: 20% 0 0 0;
+    padding: 0 0 0 0;
+}
+.inicial{
+    width: 75%;
+    height: 15%;
+    border-radius: 3vh;
+    border: var(--greenBg);
+    position: absolute;
+    margin: 30% auto 0 auto;
+    left: 0;
+    right: 0;
+    color: var(--greenSoft);
+    background-color: var(--greenBg);
+}
 .lista{
+    height: 6vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0px 0px 0px 0px;
+    background-color: var(--greenBg);
+    margin: 2% 2% 0 2%;
 }
 
 .delete {
-    width: 10vh;
+    width: auto;
+    background-color: transparent;
+    border: transparent;
     margin: 5%;
 }
 
+.img{
+    width: 70%;
+}
+
 .name{
+    color: var(--greenSoft);
     width: 50%;
     margin: 0 0 0 5%;
+}
+
+.header{
+    height: 12vh;
+    width: 100%;
+    background-color: var(--blueDark);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.orden{
+    width: auto;
+    margin: 0 2% 0 2%;
+    color: var(--blueLight);    
+}
+
+.ordenar,
+.limpiar{
+    background-color: var(--blueLight);
+    color: var(--blueDark);
+    border: var(--blueLight);
+    border-radius: 5px;
+    margin: 0 2% 0 0;
+}
+
+.agregar{
+    color: var(--greenSoft);
+    background-color: var(--greenBg);
+    border: transparent;
+    border-radius: 5px;
+    height: 4vh;
+    width: fit-content;
+    position: absolute;
+    margin: 5% auto 5% auto;
+    left: 0;
+    right: 0;
+}
+
+select{
+    background-color: transparent;
+    color: var(--blueLight);
+    margin: 0 1% 0 0;
 }
